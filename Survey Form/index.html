@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container_top">
+            <h1>Customer Survey Form</h1>
+        </div>
+        <form>
+            <div class="form_top">
+                <div class="form_left">
+                    <h4 class="title">First Name</h4>
+                    <input type="text" class="input_field" name="Name" id="fname">
+                    <span id="showError_fname" class="errorHandle">Required*</span>
+                </div>
+                <div class="form_right">
+                    <h4 class="title">Last Namne</h4>
+                    <input type="text" class="input_field" name="Name" id="lname">
+                    <span id="showError_lname" class="errorHandle">Required*</span>
+                </div>
+            </div>
+            <div>
+              <label for="lname">Date of Birth:</label>
+              <input
+                type="date"
+                placeholder="Enter your DoB"
+                id="date"
+                class="e_name"
+                name="date" />
+              <span id="showError_date" class="errorHandle">Required*</span>
+            </div>
+            <div>
+              <label for="">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" />
+              <span id="showError_email" class="errorHandle">Required*</span>
+            </div>
+            <div>
+                <label for="Country">Country:</label>
+                <select name="country" id="country" class="inputClass">
+                  <option value=""></option>
+                  <option value="10th">India</option>
+                  <option value="12th">USA</option>
+                  <option value="B.Tech">Austrelia</option>
+                  <option value="MCA">Japan</option>
+                </select>
+                <span id="showError_country" class="errorHandle">Required*</span>
+            </div>
+            <div>
+                <label for="">Profession</label>
+                <input type="text" id="profession" placeholder="Enter your Profession" />
+                <span id="showError_profession" class="errorHandle">Required*</span>
+            </div>
+            <div>
+              <label for="number">Mo. No.:</label>
+              <input
+                type="number"
+                pattern="/^-?\d+\.?\d*$/"
+                onKeyPress="if(this.value.length==10) return false;"
+                id="number"
+                placeholder="Enter your no."
+                class="e_name"
+                name="mobileno"
+              />
+              <span id="showError_number" class="errorHandle">Required*</span>
+            </div>
+            <div>
+              <label for="gender">Gender:</label><br />
+              <input type="radio" name="gender" id="male" value="Male" class="e_name" />
+              <label for="male">Male</label><br />
+              <input type="radio" name="gender" id="female" value="Female"  class="e_name"/>
+              <label for="female">Female</label>
+              <span id="showError_gender" class="errorHandle">Required*</span>
+            </div>
+            <div class="btn">
+              <button id="btn" type="button">SUBMIT</button>
+              <button id="btn" type="submit">RESET</button>
+            </div>
+          </form>
+        <!-- <div class="form">
+            <div class="form_top">
+                <div class="form_left">
+                    <h4 class="title">Name</h4>
+                    <input type="text" class="input_field" name="Name">
+                    <span id="showError_gender" class="errorHandle">Required*</span>
+                </div>
+                <div class="form_right">
+                    <h4 class="title">Email</h4>
+                    <input type="email" class="input_field" name="Email">
+                    <span id="showError_gender" class="errorHandle">Required*</span>
+                </div>
+            </div>
+            <div class="form_mid">
+                <div>
+                    <p>Is this first time You are using our products and services?</p>
+                     <input type="radio" id="yes" name="services" value="Yes">
+                     <label for="html">Yes</label>
+                     <input type="radio" id="no" name="services" value="No">
+                     <label for="html">No</label>
+                     <span id="showError_gender" class="errorHandle">Required*</span>
+                </div>
+                <div>
+                    <p>Would you suggestion to your friends and collegue?</p>
+                     <input type="radio" id="yes" name="suggestion" value="Yes">
+                     <label for="html">Yes</label>
+                     <input type="radio" id="no" name="suggestion" value="No">
+                     <label for="html">No</label>
+                     <span id="showError_gender" class="errorHandle">Required*</span>
+                </div>
+                <div>
+                    <p>How satisfied are you with our company overall</p>
+                     <input type="radio" id="yes" name="satisfied" value="Satisfied">
+                     <label for="html">Satisfied</label>
+                     <input type="radio" id="no" name="satisfied" value="Undescribed">
+                     <label for="html">Undescribed</label>
+                     <input type="radio" id="no" name="satisfied" value="Unsatisfied">
+                     <label for="html">Unsatisfied </label>
+                     <span id="showError_gender" class="errorHandle">Required*</span>
+                </div>
+            </div>
+            <div class="form_bottom">
+                <h4>Do you have suggestion to improve our services?</h4>
+                <input type="text" style="width: 95%; height: 7rem;">
+            </div>
+            <div class="btn">
+                <button id="sbtn">SUBMIT</button>
+            </div>
+        </div> -->
+    </div>
+
+
+    <script src="script.js"></script> 
+</body>
+</html>

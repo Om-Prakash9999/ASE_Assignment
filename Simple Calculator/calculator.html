@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="calculator.css">
+	<title>Calculator</title>
+</head>
+<body>
+	<!-- <div id="container"> -->
+		<div id="Calculator">
+			<table border="1">
+				<tr>
+					<h1>Calculator</h1>
+				</tr>
+		
+				<tr>
+					<td colspan="3"><input type="text" id="result"></td>
+					<td><input type="button" value="AC" class="operator" onclick="clr()"/></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" class="number" value="7" onclick="view('7')"/></td>
+					<td><input type="button" class="number" value="8" onclick="view('8')"/></td>
+					<td><input type="button" class="number" value="9" onclick="view('9')"/></td>
+					<td><input type="button" value="&times" class="operator multiplication" onclick="view('*')"/></td>	
+				</tr>
+
+				<tr>
+					<td><input type="button" class="number" value="4" onclick="view('4')"/></td>
+					<td><input type="button" class="number" value="5" onclick="view('5')"/></td>
+					<td><input type="button" class="number" value="6" onclick="view('6')"/></td>
+					<td><input type="button" class="operator subtraction" value="-" onclick="view('-')"/></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" class="number" value="1" onclick="view('1')"/></td>
+					<td><input type="button" class="number" value="2" onclick="view('2')"/></td>
+					<td><input type="button" class="number" value="3" onclick="view('3')"/></td>
+					<td><input type="button" class="operator addition" value="+" onclick="view('+')"/></td>
+				</tr>
+
+				<tr>
+					<td><input type="button" value="." class="number" onclick="view('.')"/></td>
+					<td><input type="button" value="0" class="number" onclick="view('0')"/></td>
+					<td><input type="button" value="=" class="operator equal" onclick="compute()"/></td>
+					<td><input type="button" class="operator division" value="&#247" onclick="view('/')"/></td>
+				</tr>
+			</table>
+		</div>
+	<!-- </div> -->
+	<script src="calculator.js"></script>
+
+</body>
+</html>

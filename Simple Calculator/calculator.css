@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background:url('bgimage.jpg');
+}
+
+h1{
+    text-align: center;
+}
+
+#Calculator {
+    width: 305px;
+    height: 365px;
+    background-color: #a75a5a;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    border-radius: 5px;
+    border: 2px solid #060000 ;
+    margin-top: 10rem;
+}
+
+#result{
+    height: 55px;
+    margin: 0;
+}
+
+.operator, .number, .empty {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    float: center;
+    border-radius: 50px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.number, .operator {
+    cursor: pointer;
+}
+
+.operator:active, .number:active {
+    font-size: 13px;
+}
+
+.operator:focus, .number:focus, .empty:focus {
+    outline: 0;
+}
+
+.division{
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+
+.multiplication{
+    font-size: 20px;
+    background-color: #ffa500;
+}
+
+.subtraction{
+    font-size: 20px;
+    background-color: #f08080;
+}
+
+.addition{
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+
+.equal{
+    font-size: 20px;
+    background-color: #9477af;
+}
+
+input[type="text"]
+{
+    text-align: right;
+    background-color: cornsilk;
+    border: solid black 2px;
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 30px;
+}
